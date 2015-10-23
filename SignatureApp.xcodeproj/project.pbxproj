@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2BD65A91BDA2B9200D189F3 /* blackLine.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BD65A81BDA2B9200D189F3 /* blackLine.png */; };
+		F2BD65AB1BDA3AB900D189F3 /* blackLine.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BD65AA1BDA3AB900D189F3 /* blackLine.png */; };
 		F2CB0BBA1BD9539D00432562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB0BB91BD9539D00432562 /* main.m */; };
 		F2CB0BBD1BD9539D00432562 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB0BBC1BD9539D00432562 /* AppDelegate.m */; };
-		F2CB0BC01BD9539D00432562 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB0BBF1BD9539D00432562 /* ViewController.m */; };
+		F2CB0BC01BD9539D00432562 /* SignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB0BBF1BD9539D00432562 /* SignatureViewController.m */; };
 		F2CB0BC31BD9539D00432562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CB0BC11BD9539D00432562 /* Main.storyboard */; };
 		F2CB0BC51BD9539D00432562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CB0BC41BD9539D00432562 /* Assets.xcassets */; };
 		F2CB0BC81BD9539D00432562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CB0BC61BD9539D00432562 /* LaunchScreen.storyboard */; };
@@ -31,13 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F2BD65A81BDA2B9200D189F3 /* blackLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackLine.png; sourceTree = "<group>"; };
+		F2BD65AA1BDA3AB900D189F3 /* blackLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackLine.png; sourceTree = "<group>"; };
 		F2CB0BB51BD9539D00432562 /* SignatureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignatureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CB0BB91BD9539D00432562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2CB0BBB1BD9539D00432562 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2CB0BBC1BD9539D00432562 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2CB0BBE1BD9539D00432562 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2CB0BBF1BD9539D00432562 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2CB0BBE1BD9539D00432562 /* SignatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignatureViewController.h; sourceTree = "<group>"; };
+		F2CB0BBF1BD9539D00432562 /* SignatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignatureViewController.m; sourceTree = "<group>"; };
 		F2CB0BC21BD9539D00432562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2CB0BC41BD9539D00432562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2CB0BC71BD9539D00432562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 			children = (
 				F2CB0BBB1BD9539D00432562 /* AppDelegate.h */,
 				F2CB0BBC1BD9539D00432562 /* AppDelegate.m */,
-				F2CB0BBE1BD9539D00432562 /* ViewController.h */,
-				F2CB0BBF1BD9539D00432562 /* ViewController.m */,
-				F2BD65A81BDA2B9200D189F3 /* blackLine.png */,
+				F2CB0BBE1BD9539D00432562 /* SignatureViewController.h */,
+				F2CB0BBF1BD9539D00432562 /* SignatureViewController.m */,
+				F2BD65AA1BDA3AB900D189F3 /* blackLine.png */,
 				F2CB0BC11BD9539D00432562 /* Main.storyboard */,
 				F2CB0BC41BD9539D00432562 /* Assets.xcassets */,
 				F2CB0BC61BD9539D00432562 /* LaunchScreen.storyboard */,
@@ -215,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2CB0BC81BD9539D00432562 /* LaunchScreen.storyboard in Resources */,
-				F2BD65A91BDA2B9200D189F3 /* blackLine.png in Resources */,
+				F2BD65AB1BDA3AB900D189F3 /* blackLine.png in Resources */,
 				F2CB0BC51BD9539D00432562 /* Assets.xcassets in Resources */,
 				F2CB0BC31BD9539D00432562 /* Main.storyboard in Resources */,
 			);
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2CB0BC01BD9539D00432562 /* ViewController.m in Sources */,
+				F2CB0BC01BD9539D00432562 /* SignatureViewController.m in Sources */,
 				F2CB0BBD1BD9539D00432562 /* AppDelegate.m in Sources */,
 				F2CB0BBA1BD9539D00432562 /* main.m in Sources */,
 			);

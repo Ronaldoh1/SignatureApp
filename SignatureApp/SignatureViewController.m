@@ -6,9 +6,9 @@
 //  Copyright © 2015 Wahoo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SignatureViewController.h"
 
-@interface ViewController ()
+@interface SignatureViewController ()
 //tracks your fingers
 @property CGPoint lastPoint;
 //tracks way of drawing
@@ -29,11 +29,15 @@
 
 @end
 
-@implementation ViewController
+@implementation SignatureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    /*-------------------------------
+     **Set Up Image for Drawing & Add to View
+     **------------------------------*/
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     //draw the image saved
@@ -44,7 +48,11 @@
     self.drawImage.frame = self.view.frame;
     [self.view addSubview:self.drawImage];
 
-    //*Add -Clear Button to UIView
+
+
+    /*-------------------------------
+     **Add Clear Button to UIView
+     **------------------------------*/
     UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
     //set the frame
@@ -56,7 +64,10 @@
     [clearButton addTarget:self action:@selector(clearSignature) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:clearButton];
 
-    //*Add -Save Button to UIView
+    /*-------------------------------
+     **Add Save Button to UIView
+     **------------------------------*/
+
     UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
     //set the frame
@@ -68,17 +79,41 @@
     [saveButton addTarget:self action:@selector(saveSignature) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:saveButton];
 
+    /*-------------------------------
+    **Add UIImage for BlackLine
+    **------------------------------*/
+    UIImageView *blackLine = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"blackLine.png"]];
+    //set the frame
+    blackLine.frame = CGRectMake(0, 300, self.view.frame.size.width - 225, 40);
+
+    [self.view addSubview:blackLine];
+
+
 
 }
+#pragma Helper Methods
+/*-------------------------------
+ **Save Signatures
+ **------------------------------*/
+
 -(void)saveSignature{
     NSLog(@"save signature ");
 
 }
+
+/*-------------------------------
+ **Clear Signature
+ **------------------------------*/
+
 -(void)clearSignature{
 
     NSLog(@"clear signature");
 
 }
+
+/*-------------------------------
+ **Clear Signature
+ **------------------------------*/
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
     self.mouseWasSwiped = NO;
